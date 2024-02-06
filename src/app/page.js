@@ -18,18 +18,17 @@ async function GetPokemonData(){
   })
 }
 useEffect(()=>{GetPokemonData()},[])
-console.log(pokemon)
   return (
     <>
     <section>
       {isLoading? (<div>Carregando...</div>) : (
         <ul>
           {pokemon.map((pokes)=>
-          <section className="cards"> 
+          <section key={pokes.id} className="cards"> 
           <figure className="card-image">
             <Image  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokes.id}.png`} width={180} height={180} alt={pokes.name} />
             </figure>
-            <li className="pokes" key={pokes.index}>{pokes.name}
+            <li className="pokes" >{pokes.name}
             </li>
             <Link href={`/pokemon/${pokes.id}`}> <button>Detalhes</button></Link>
             </section>
