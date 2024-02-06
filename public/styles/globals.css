@@ -1,0 +1,62 @@
+
+/* ESTILO DO LAYOUT PRINCIPAL */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+  
+}
+
+body{
+  min-height: 100vh;
+  background-color: #f7e5e5;
+}
+main{
+  flex: 1 0 auto;
+background-color: #ffe1e1;
+
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #201e1e;
+  color: white;
+}
+header section{
+  font-size: 1.4rem;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+header ul{
+  width: 10vw;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+ul a{
+  text-decoration: none;
+  color: #fff;
+  font-size:1.4rem;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #201e1e;
+  height: 15vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
